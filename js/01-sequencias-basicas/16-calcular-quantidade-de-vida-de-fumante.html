@@ -1,0 +1,21 @@
+
+<script>
+/*16) [DESAFIO] Escreva um programa para calcular a redução do tempo de vida de um 
+fumante. Pergunte a quantidade de cigarros fumados por dias e quantos anos ele 
+já fumou. Considere que um fumante perde 10 min de vida a cada cigarro. Calcule 
+quantos dias de vida um fumante perderá e exiba o total em dias. */
+
+let cigarrosDiario= parseInt(prompt("Quantos Cigarros fuma por dia Dia : "))
+let qtdAnos= parseInt(prompt("Por quantos anos fuma: "))
+let tempoPerdido = (10*cigarrosDiario)
+
+let diasPerdidos= parseInt(tempoPerdido/24)
+if(tempoPerdido<24)
+{
+    alert("O tempo que o fumante perdeu nesses "+qtdAnos+" anos é: "+tempoPerdido+" horas" );
+}
+else{
+    alert("Os dias que o fumante perdeu nesses "+qtdAnos+" anos é de: "+diasPerdidos+" dias" );
+}
+ 
+</script>

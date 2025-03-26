@@ -1,0 +1,32 @@
+<script>
+    /*
+   21) Faça um algoritmo que leia um determinado ano e mostre se ele é ou não 
+BISSEXTO.  */
+           let ano = parseInt(prompt("Digite um ano: "));
+           /*
+           FORMULA
+           Se o ano for divisível por 4, pode ser bissexto.
+No entanto, se o ano for divisível por 100, ele não será bissexto, a menos que também seja divisível por 400.
+            */
+           if((ano%4==0)){
+
+                        if((ano%100)!=0){
+                            if((ano%400)==0){
+                                alert("O ano "+ano+" é Bissexto" )
+                            }
+                            else{
+                                alert("O ano "+ano+" Não é Bissexto" )
+                            }                          
+                        }
+                        else{
+                             alert("O ano "+ano+"é Bissexto" )
+                             }   
+
+           }  
+           else{
+                    alert("O ano "+ano+" Não é Bissexto" )
+                }   
+         
+          
+   
+   </script>
